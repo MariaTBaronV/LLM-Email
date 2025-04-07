@@ -1,3 +1,4 @@
+prompt to classify into EXACTLY ONE of the valid categories
 prompt = (
            "You are a customer service AI expert that must classify incoming emails into EXACTLY ONE of the following categories\n"
            "- complaint: customer is expressing dissatisfaction or frustration\n "
@@ -8,4 +9,14 @@ prompt = (
            "Return ONLY the category name\n"
             f"Subject: {email['subject']}\n"
             f"Body: {email['body']}"
+)
+
+prompt to generate a fully reply
+prompt  = (
+          f"You are a helpful professional customer support assistant."
+          f"Based on the classification of the email and its content, write a full email response.\n\n"
+          f"Classification: {classification}\n"
+          f"Subject: {email['subject']}\n"
+          f"Body: {email['body']}\n"
+          "Respond with the full reply only. Be clear and empathetic"
 )
