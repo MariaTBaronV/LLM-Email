@@ -1,0 +1,7 @@
+Processing Summary:
+  email_id  success   classification  response_sent                                      response_text
+0      001     True        complaint           True  Dear Customer, we're very sorry your product arrived damaged. Please accept our sincerest apologies. We'll immediately process your refund and contact you shortly with details.
+1      002     True          inquiry           True  Hello! Thanks for reaching out. Yes, our premium package is fully compatible with Mac OS. Let us know if you need further assistance!
+2      003     True         feedback           True  Hi! Thank you very much for your kind words. We’re thrilled Sarah provided exceptional support. Your feedback is greatly appreciated!
+3      004     True  support_request           True  Hello! Sorry you're experiencing installation issues. Error 5123 typically occurs due to cache conflicts. We recommend reinstalling after clearing all related caches. If issues persist, please let us know.
+4      005     True            other           True  Hello! Thank you for considering a partnership. We're excited about exploring this further. Could you please suggest convenient times for a call next week?

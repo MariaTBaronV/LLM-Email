@@ -1,0 +1,11 @@
+prompt = (
+           "You are a customer service AI expert that must classify incoming emails into EXACTLY ONE of the following categories\n"
+           "- complaint: customer is expressing dissatisfaction or frustration\n "
+           "- inquiry: asking for information or clarification\n "
+           "- feedback:giving positive or neutral opinions\n "
+           "- support_request: asking for help with using a product or service\n"
+           "- other: doest not fit any of the above\n"
+           "Return ONLY the category name\n"
+            f"Subject: {email['subject']}\n"
+            f"Body: {email['body']}"
+)
