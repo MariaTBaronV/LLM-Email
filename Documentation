@@ -1,0 +1,54 @@
+LLM Integration Exercise: Email Classification and Automation
+https://github.com/CadreAI/llm-email-classifier-test
+Solved by: 
+Maria Teresa Barón
+mariatbaronv@icloud.com
++573113305646
+Link video: https://www.canva.com/design/DAGj5pkQIfs/GN9FFoz2TywrtWiF6CurZw/edit?utm_content=DAGj5pkQIfs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+1. Working Implementation
+The provided Python script implements an automated email classification and response generation system using OpenAI's GPT-3.5 API. The system:
+•	Validates incoming emails for completeness.
+•	Classifies emails into predefined categories (complaint, inquiry, feedback, support_request, other).
+•	Generates empathetic and clear responses based on email content and classification.
+•	Simulates sending responses and handling tasks such as ticket creation or logging feedback.
+2. Documentation of Approach
+The implemented pipeline includes:
+EmailProcessor class:
+•	Validates emails to ensure required fields are present.
+•	Utilizes GPT-3.5 for email classification and response generation using clearly structured prompts.
+EmailAutomationSystem class:
+•	Manages end-to-end processing of each email.
+•	Triggers specific handlers based on the email classification.
+Mock Functions:
+•	Simulate external services (sending responses, creating tickets, logging feedback).
+3. Example Run
+Please check on the Example_Run.txt document in the folder.
+
+4. Documentation of Prompt Iterations
+Please check on the prompt.txt document in the folder.
+
+Problems encountered:
+•	Initial minor typos in the prompt (e.g., spacing and spelling inconsistencies).
+•	Ensured clear instruction to return only the category to avoid inconsistent results.
+Improvements made:
+•	Corrected typos and standardized prompt structure for clarity and consistency.
+•	Adjusted GPT-3.5 API call temperature to 0 for consistent classification results.
+
+5. Brief Summary
+
+Design Decisions:
+•	Modular structure for clarity and maintainability.
+•	Clear separation between validation, classification, response generation, and handling tasks.
+Challenges Encountered:
+•	Ensuring classification consistency.
+•	Handling potential API exceptions gracefully.
+Potential Improvements:
+•	Implement caching mechanisms to optimize API usage.
+•	Include detailed logging for monitoring and auditing.
+•	Integrate manual verification for sensitive classifications.
+Production Considerations:
+•	Management of OpenAI API costs and rate limits.
+•	Secure handling of API keys and sensitive email data.
+•	Compliance with privacy and data protection regulations.
+
